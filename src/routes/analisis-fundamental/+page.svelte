@@ -10,8 +10,6 @@
     empresas sólidas con potencial de crecimiento a largo plazo.
   </p>
 
-  <h2 class="text-2xl font-bold mb-6 text-yellow-400">✅ Puntos Clave al Evaluar una Empresa</h2>
-
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
     <article class="bg-gray-800 rounded-xl p-6">
