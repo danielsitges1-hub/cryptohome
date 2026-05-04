@@ -9,7 +9,7 @@
         implica un alto riesgo y puede resultar en la pérdida total del capital invertido.
         Consulta siempre con un asesor financiero certificado antes de tomar decisiones de inversión.
       </p>
-      <p class="text-gray-500">© 2026 CryptoHome. Solo educación, nunca recomendación.</p>
+      <p class="text-gray-500">© 2026 Crypto Network. Solo educación, nunca recomendación.</p>
     </div>
   </div>
 </footer>

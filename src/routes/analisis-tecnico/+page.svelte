@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Análisis Técnico — CryptoHome</title>
+  <title>Análisis Técnico — Crypto Network</title>
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>CryptoHome — Educación Financiera</title>
+  <title>Crypto Network — Educación Financiera</title>
 </svelte:head>
 
 <section class="max-w-6xl mx-auto px-4 py-16">

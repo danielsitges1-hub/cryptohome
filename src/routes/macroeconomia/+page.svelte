@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Macroeconomía — CryptoHome</title>
+  <title>Macroeconomía — Crypto Network</title>
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">
