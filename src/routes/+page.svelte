@@ -7,6 +7,7 @@
 </svelte:head>
 
 <section class="max-w-6xl mx-auto px-4 py-16">
+  <!-- Hero -->
   <div class="text-center mb-12">
     <h1 class="text-5xl font-bold mb-4">
       Aprende a <span class="text-yellow-400">invertir</span> con conocimiento
@@ -17,10 +18,28 @@
     </p>
   </div>
 
+  <!-- Precios en tiempo real -->
   <div class="mb-16">
     <PriceWidget />
   </div>
 
+  <!-- Video de bienvenida gratuito -->
+  <div class="mb-16">
+    <h2 class="text-2xl font-bold mb-2 text-center">🎬 Video de Bienvenida — Gratis</h2>
+    <p class="text-gray-400 text-center mb-6">Conoce de qué trata el curso antes de comprometerte</p>
+    <div class="relative w-full rounded-xl overflow-hidden shadow-2xl" style="padding-top: 56.25%;">
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/Ch588LyIcLY"
+        title="Video de Bienvenida — Crypto Network"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <!-- Secciones educativas -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <a href="/macroeconomia" class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-colors group">
       <div class="text-3xl mb-3">🌍</div>
