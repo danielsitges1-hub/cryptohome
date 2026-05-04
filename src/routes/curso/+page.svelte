@@ -7,13 +7,23 @@
     if (!email) { error = 'Ingresa tu email para continuar.'; return; }
     cargando = true;
     error = '';
-    const res = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email })
-    });
-    const { url } = await res.json();
-    window.location.href = url;
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        error = data.error ?? 'Error al procesar el pago. Intenta de nuevo.';
+        cargando = false;
+      }
+    } catch (e) {
+      error = 'Error de conexión: ' + e.message;
+      cargando = false;
+    }
   }
 </script>
 
