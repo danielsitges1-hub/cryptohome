@@ -19,6 +19,11 @@
           Análisis Fundamental
         </a>
       </li>
+      <li>
+        <a href="/curso" class="bg-yellow-400 text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-300 transition-colors">
+          Comprar Curso
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
