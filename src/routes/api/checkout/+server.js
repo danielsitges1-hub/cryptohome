@@ -2,7 +2,9 @@ import Stripe from 'stripe';
 import { STRIPE_SECRET_KEY } from '$env/static/private';
 import { json } from '@sveltejs/kit';
 
-const stripe = new Stripe(STRIPE_SECRET_KEY);
+const stripe = new Stripe(STRIPE_SECRET_KEY, {
+  httpClient: Stripe.createNodeHttpClient(),
+});
 
 export async function POST({ request, url }) {
   const { email } = await request.json();

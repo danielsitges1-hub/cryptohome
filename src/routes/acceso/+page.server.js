@@ -4,7 +4,9 @@ import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
 import { redirect } from '@sveltejs/kit';
 
-const stripe = new Stripe(STRIPE_SECRET_KEY);
+const stripe = new Stripe(STRIPE_SECRET_KEY, {
+  httpClient: Stripe.createNodeHttpClient(),
+});
 
 export async function load({ url }) {
   const sessionId = url.searchParams.get('session_id');
