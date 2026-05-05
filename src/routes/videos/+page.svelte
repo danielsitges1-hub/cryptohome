@@ -11,26 +11,26 @@
     {
       titulo: '2. Introducción',
       videos: [
-        { titulo: 'Bienvenida', youtubeId: '' },
-        { titulo: 'Canales de Información', youtubeId: '' },
-        { titulo: 'Afiliados', youtubeId: '' },
+        { titulo: 'Bienvenida', youtubeId: 'scUE5tpU71M' },
+        { titulo: 'Canales de Información', youtubeId: 'Fy-vmJvg98o' },
+        { titulo: 'Afiliados', youtubeId: 'ejMgHRCdNb4' },
         { titulo: 'Registro de Trades (Excel)', youtubeId: '' },
         { titulo: 'Mindset', youtubeId: '' },
-        { titulo: 'Fundamentos de la Inversión', youtubeId: '' },
-        { titulo: '¿Por qué invertir en Cryptos?', youtubeId: '' },
+        { titulo: 'Fundamentos de la Inversión', youtubeId: 'llbu4wipB1g' },
+        { titulo: '¿Por qué invertir en Cryptos?', youtubeId: 'yskyqSYYUqQ' },
       ]
     },
     {
       titulo: '3. Broker y Aplicación',
       videos: [
-        { titulo: 'Bybit', youtubeId: '' },
-        { titulo: 'TradingView', youtubeId: '' },
+        { titulo: 'Bybit', youtubeId: 'RMA3CHov7rE' },
+        { titulo: 'TradingView', youtubeId: 'J5x-DuJEnFo' },
       ]
     },
     {
       titulo: '4. Temario',
       videos: [
-        { titulo: 'Capitalización Alta vs Baja', youtubeId: '' },
+        { titulo: 'Capitalización Alta vs Baja', youtubeId: 'noFLU9teuA8' },
       ]
     },
     {
