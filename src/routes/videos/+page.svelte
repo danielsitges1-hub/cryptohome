@@ -14,8 +14,8 @@
         { titulo: 'Bienvenida', youtubeId: 'scUE5tpU71M' },
         { titulo: 'Canales de Información', youtubeId: 'Fy-vmJvg98o' },
         { titulo: 'Afiliados', youtubeId: 'ejMgHRCdNb4' },
-        { titulo: 'Registro de Trades (Excel)', youtubeId: '' },
-        { titulo: 'Mindset', youtubeId: '' },
+        { titulo: 'Registro de Trades (Excel)', youtubeId: '', descarga: '/registro-trades.csv' },
+        { titulo: 'Mindset', youtubeId: 'P2M8dRLYQFo' },
         { titulo: 'Fundamentos de la Inversión', youtubeId: 'llbu4wipB1g' },
         { titulo: '¿Por qué invertir en Cryptos?', youtubeId: 'yskyqSYYUqQ' },
       ]
@@ -36,29 +36,29 @@
     {
       titulo: '5. Gráficos y Análisis Técnico',
       videos: [
-        { titulo: 'Demo TradingView', youtubeId: '' },
-        { titulo: 'Demo Bybit', youtubeId: '' },
-        { titulo: 'Cierre de Módulo', youtubeId: '' },
+        { titulo: 'Demo TradingView', youtubeId: 'tSbsE5gaztw' },
+        { titulo: 'Demo Bybit', youtubeId: '27QkXlUNnP0' },
+        { titulo: 'Cierre de Módulo', youtubeId: 'xIeKRwYBNFk' },
       ]
     },
     {
       titulo: '6. Indicadores',
       videos: [
-        { titulo: 'Temporalidades', youtubeId: '' },
-        { titulo: 'ADX', youtubeId: '' },
-        { titulo: 'RSI', youtubeId: '' },
-        { titulo: 'Volumen', youtubeId: '' },
-        { titulo: 'EMA', youtubeId: '' },
-        { titulo: 'Patrones', youtubeId: '' },
-        { titulo: 'Tendencias', youtubeId: '' },
-        { titulo: 'Day Trade & Swing Trade', youtubeId: '' },
-        { titulo: 'Velas Japonesas', youtubeId: '' },
+        { titulo: 'Temporalidades', youtubeId: '962rMa-X_Ro' },
+        { titulo: 'ADX', youtubeId: '6KjwBTn2Suo' },
+        { titulo: 'RSI', youtubeId: 'GUl2KUgadNc' },
+        { titulo: 'Volumen', youtubeId: 'CZRKAJqUR1I' },
+        { titulo: 'EMA', youtubeId: '6WUg3Qx1dEs' },
+        { titulo: 'Patrones', youtubeId: '4uahKCTka2c' },
+        { titulo: 'Tendencias', youtubeId: 'a59l-i6k9no' },
+        { titulo: 'Day Trade & Swing Trade', youtubeId: 'wFjz4lo6n6c' },
+        { titulo: 'Velas Japonesas', youtubeId: 'DVS74fv9ADg' },
       ]
     },
     {
       titulo: '7. Conclusión',
       videos: [
-        { titulo: 'Cierre del Curso', youtubeId: '' },
+        { titulo: 'Cierre del Curso', youtubeId: 'CY5tXT92vJg' },
       ]
     }
   ];
@@ -66,7 +66,7 @@
   let videoActivo = modulos[0].videos[0];
 
   function seleccionar(video) {
-    if (video.youtubeId) videoActivo = video;
+    if (video.youtubeId || video.descarga) videoActivo = video;
   }
 </script>
 
@@ -95,6 +95,19 @@
           ></iframe>
         </div>
         <h2 class="text-xl font-bold mt-4">{videoActivo.titulo}</h2>
+      {:else if videoActivo.descarga}
+        <div class="bg-gray-800 rounded-xl flex flex-col items-center justify-center gap-4 p-10" style="aspect-ratio: 16/9;">
+          <p class="text-white text-lg font-semibold text-center">📊 Registro de Trades</p>
+          <p class="text-gray-400 text-sm text-center max-w-sm">Usa esta plantilla para registrar cada trade: fecha, ticket, tamaño de posición, dirección y resultado.</p>
+          <a
+            href={videoActivo.descarga}
+            download
+            class="bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg hover:bg-yellow-300 transition-colors"
+          >
+            ⬇️ Descargar Excel
+          </a>
+        </div>
+        <h2 class="text-xl font-bold mt-4">{videoActivo.titulo}</h2>
       {:else}
         <div class="bg-gray-800 rounded-xl flex items-center justify-center" style="aspect-ratio: 16/9;">
           <p class="text-gray-500">Video próximamente disponible</p>
@@ -113,11 +126,13 @@
                 onclick={() => seleccionar(video)}
                 class="w-full text-left px-3 py-2 rounded-lg text-sm transition-colors
                   {videoActivo === video ? 'bg-yellow-400 text-black font-semibold' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}
-                  {!video.youtubeId ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'}"
-                disabled={!video.youtubeId}
+                  {!video.youtubeId && !video.descarga ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'}"
+                disabled={!video.youtubeId && !video.descarga}
               >
                 {video.titulo}
-                {#if !video.youtubeId}
+                {#if video.descarga}
+                  <span class="text-xs ml-1">📊</span>
+                {:else if !video.youtubeId}
                   <span class="text-xs ml-1">(próximamente)</span>
                 {/if}
               </button>
