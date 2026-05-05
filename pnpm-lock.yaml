@@ -17,6 +17,9 @@ importers:
       stripe:
         specifier: ^22.1.0
         version: 22.1.0(@types/node@25.6.0)
+      ws:
+        specifier: ^8.20.0
+        version: 8.20.0
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0

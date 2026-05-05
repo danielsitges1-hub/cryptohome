@@ -2,6 +2,7 @@ import Stripe from 'stripe';
 import { STRIPE_SECRET_KEY, SUPABASE_SERVICE_ROLE_KEY } from '$env/static/private';
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
+import ws from 'ws';
 
 const stripe = new Stripe(STRIPE_SECRET_KEY);
 
@@ -20,7 +21,7 @@ export async function POST({ request }) {
     const session = event.data.object;
     const email = session.customer_email;
 
-    const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+    const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { realtime: { transport: ws } });
     await supabase.from('purchases').upsert({ email, stripe_session_id: session.id });
   }
 

@@ -2,6 +2,7 @@ import { STRIPE_SECRET_KEY, SUPABASE_SERVICE_ROLE_KEY } from '$env/static/privat
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
 import { redirect } from '@sveltejs/kit';
+import ws from 'ws';
 
 export async function load({ url }) {
   const sessionId = url.searchParams.get('session_id');
@@ -16,7 +17,7 @@ export async function load({ url }) {
     const session = await res.json();
 
     if (session.payment_status === 'paid') {
-      const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+      const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { realtime: { transport: ws } });
       await supabase.from('purchases').upsert({
         email: session.customer_email,
         stripe_session_id: session.id
@@ -33,7 +34,7 @@ export const actions = {
     const data = await request.formData();
     const email = data.get('email')?.toLowerCase().trim();
 
-    const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+    const supabase = createClient(PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { realtime: { transport: ws } });
     const { data: compra } = await supabase
       .from('purchases')
       .select('email')

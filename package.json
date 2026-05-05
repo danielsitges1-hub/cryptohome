@@ -31,6 +31,7 @@
 	"dependencies": {
 		"@stripe/stripe-js": "^9.4.0",
 		"@supabase/supabase-js": "^2.105.3",
-		"stripe": "^22.1.0"
+		"stripe": "^22.1.0",
+		"ws": "^8.20.0"
 	}
 }
