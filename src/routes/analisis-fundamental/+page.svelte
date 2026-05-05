@@ -1,5 +1,15 @@
 <svelte:head>
-  <title>Análisis Fundamental — Crypto Network</title>
+  <title>Análisis Fundamental de Criptomonedas — Crypto Network</title>
+  <meta name="description" content="Aprende análisis fundamental para invertir en criptomonedas y bolsa de valores. Capitalización, reportes trimestrales, dividendos y cómo evaluar el valor real de un activo." />
+  <meta property="og:title" content="Análisis Fundamental de Criptomonedas — Crypto Network" />
+  <meta property="og:description" content="Evalúa el valor real de un activo. Capitalización, reportes trimestrales, dividendos y señales fundamentales para invertir con inteligencia." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cryptohome-beta.vercel.app/analisis-fundamental" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Análisis Fundamental de Criptomonedas — Crypto Network" />
+  <meta name="twitter:description" content="Capitalización, reportes trimestrales, dividendos y cómo evaluar el valor real de un activo crypto." />
+  <meta name="keywords" content="analisis fundamental crypto, capitalización mercado, reporte trimestral, dividendos acciones, invertir largo plazo, valor intrínseco bitcoin" />
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">

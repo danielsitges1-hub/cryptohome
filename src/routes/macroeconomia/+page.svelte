@@ -1,5 +1,15 @@
 <svelte:head>
-  <title>Macroeconomía — Crypto Network</title>
+  <title>Macroeconomía para Traders — Crypto Network</title>
+  <meta name="description" content="Aprende cómo la macroeconomía afecta los mercados financieros y las criptomonedas. Inflación, desempleo, PIB, recesiones y políticas fiscales explicados para traders." />
+  <meta property="og:title" content="Macroeconomía para Traders — Crypto Network" />
+  <meta property="og:description" content="Entiende cómo la inflación, el desempleo, el PIB y las políticas fiscales mueven los mercados financieros y las criptomonedas." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cryptohome-beta.vercel.app/macroeconomia" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Macroeconomía para Traders — Crypto Network" />
+  <meta name="twitter:description" content="Cómo la inflación, el desempleo y las políticas fiscales mueven los mercados y las criptomonedas." />
+  <meta name="keywords" content="macroeconomia trading, inflacion criptomonedas, PIB mercados, politica monetaria inversiones, economia y crypto" />
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">

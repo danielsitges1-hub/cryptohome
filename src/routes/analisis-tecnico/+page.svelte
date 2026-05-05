@@ -1,5 +1,15 @@
 <svelte:head>
-  <title>Análisis Técnico — Crypto Network</title>
+  <title>Análisis Técnico de Criptomonedas — Crypto Network</title>
+  <meta name="description" content="Aprende análisis técnico para trading de criptomonedas. Tendencias, soporte y resistencia, volumen, velas japonesas, temporalidades y más. Guía completa en español." />
+  <meta property="og:title" content="Análisis Técnico de Criptomonedas — Crypto Network" />
+  <meta property="og:description" content="Domina el análisis técnico: tendencias, soporte y resistencia, volumen, velas japonesas y temporalidades para trading de crypto." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cryptohome-beta.vercel.app/analisis-tecnico" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Análisis Técnico de Criptomonedas — Crypto Network" />
+  <meta name="twitter:description" content="Tendencias, soporte y resistencia, volumen, velas japonesas y temporalidades para trading de crypto." />
+  <meta name="keywords" content="analisis tecnico crypto, velas japonesas, soporte resistencia, trading bitcoin, indicadores trading, RSI MACD crypto" />
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">

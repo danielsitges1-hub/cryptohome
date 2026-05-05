@@ -28,7 +28,18 @@
 </script>
 
 <svelte:head>
-  <title>Curso de Trading — Crypto Network</title>
+  <title>Curso Completo de Trading — Crypto Network | $60 USD Acceso de por vida</title>
+  <meta name="description" content="Curso completo de trading e inversión en criptomonedas. 20+ videos, análisis técnico, fundamental, macroeconomía y gestión de riesgo. Pago único de $60 USD, acceso de por vida." />
+  <meta property="og:title" content="Curso Completo de Trading — $60 USD, Acceso de por Vida" />
+  <meta property="og:description" content="20+ videos de trading en profundidad. Análisis técnico, fundamental, macroeconomía y mindset de inversión. Un solo pago, acceso para siempre." />
+  <meta property="og:type" content="product" />
+  <meta property="og:url" content="https://cryptohome-beta.vercel.app/curso" />
+  <meta property="og:site_name" content="Crypto Network" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Curso Completo de Trading — $60 USD" />
+  <meta name="twitter:description" content="20+ videos de trading. Análisis técnico, fundamental, macroeconomía. Pago único, acceso de por vida." />
+  <meta name="keywords" content="curso trading, curso criptomonedas, aprender a invertir, trading latinoamerica, curso bolsa valores, análisis técnico crypto" />
 </svelte:head>
 
 <section class="max-w-4xl mx-auto px-4 py-16">

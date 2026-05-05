@@ -3,7 +3,18 @@
 </script>
 
 <svelte:head>
-  <title>Crypto Network — Educación Financiera</title>
+  <title>Crypto Network — Aprende a Invertir en Crypto y Bolsa</title>
+  <meta name="description" content="Aprende trading e inversión en criptomonedas desde cero. Análisis técnico, fundamental y macroeconomía. Método probado, sin promesas falsas. Curso completo en español." />
+  <meta property="og:title" content="Crypto Network — Aprende a Invertir en Crypto y Bolsa" />
+  <meta property="og:description" content="Aprende trading e inversión en criptomonedas desde cero. Análisis técnico, fundamental y macroeconomía. Método probado, sin promesas falsas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cryptohome-beta.vercel.app" />
+  <meta property="og:site_name" content="Crypto Network" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crypto Network — Aprende a Invertir en Crypto y Bolsa" />
+  <meta name="twitter:description" content="Aprende trading e inversión en criptomonedas desde cero. Análisis técnico, fundamental y macroeconomía." />
+  <meta name="keywords" content="curso trading, criptomonedas, invertir en crypto, análisis técnico, análisis fundamental, trading en español, curso de inversión" />
 </svelte:head>
 
 <section class="max-w-6xl mx-auto px-4 py-16">
